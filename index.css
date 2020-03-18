@@ -19,6 +19,7 @@ body {
 }
 
 
+
 .startQuizContainer {
   text-align: center;
   width: 300px;
@@ -58,6 +59,7 @@ body {
   width: 800px;
   height: 450px;
   border: black 3px solid;
+  border-radius: 3px;
   margin: 60px auto;
   padding: 30px;
 }
@@ -71,25 +73,30 @@ body {
   text-decoration: underline;
 }
 
+.feedbackBox {
+  text-align: center;
+}
 
-.feedbackBoxCorrect {
+.correct {
   font-size: 20pt;
   width: 300px;
   height: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
   border: 1px solid black;
+  border-radius: 3px; 
   padding: 30px;
 }
 
 
-.feedbackBoxIncorrect {
+.incorrect {
   font-size: 20pt;
   width: 300px;
-  height: 400px;
+  height: 350px;
   margin: 0 auto;
   margin-bottom: 20px;
   border: 1px solid black;
+  border-radius: 3px;
   padding: 30px;
 }
 
