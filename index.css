@@ -41,11 +41,22 @@ body {
 }
 
 
+.redirectButton {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 35px auto;
+}
+
+
 .questionBox {
   font-size: 20pt;
   font-weight: 300;
   width: 800px;
-  height: 400px;
+  height: 450px;
   border: black 3px solid;
   margin: 60px auto;
   padding: 30px;
@@ -54,4 +65,41 @@ body {
 
 .dividingLine {
   text-align: center;
+}
+
+.questionNumber {
+  text-decoration: underline;
+}
+
+
+.feedbackBoxCorrect {
+  font-size: 20pt;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+
+.feedbackBoxIncorrect {
+  font-size: 20pt;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+
+.overallScoreBox {
+  font-size: 20pt;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 30px;
 }
