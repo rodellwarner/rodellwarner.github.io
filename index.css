@@ -128,7 +128,7 @@
   
   .questionBox {
     font-size: 20pt;
-    font-weight: 300;
+    font-weight: 400;
     width: 800px;
     height: 300px;
     border: black 3px solid;
@@ -312,7 +312,7 @@ body {
 
 .questionBox {
   font-size: 20pt;
-  font-weight: 300;
+  font-weight: 400;
   width: 740px;
   height: 300px;
   border: black 3px solid;
@@ -492,7 +492,7 @@ body {
 
 .questionBox {
   font-size: 20pt;
-  font-weight: 300;
+  font-weight: 400;
   width: 310px;
   height: 410px;
   border: black 3px solid;
@@ -558,7 +558,7 @@ li {
 
 
 
-/* ***Quiz-App CSS***
+/* ***Quiz-App CSS (original)***
 
 .header {
   color: black;
