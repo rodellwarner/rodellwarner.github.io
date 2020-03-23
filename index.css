@@ -204,7 +204,7 @@
 
 body {
   background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg-Edit2.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
