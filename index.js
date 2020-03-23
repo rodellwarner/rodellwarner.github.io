@@ -34,8 +34,8 @@ const STORE = [
   },
 
   {
-    question: 'How many sides/faces does the great pyramid at Giza have?',
-    answers: ['5', '3', '8', '4'],
+    question: 'When first built, what reflective material were the pyramids at Giza covered in?',
+    answers: ['Quartz crystal', 'White limestone', 'Copper', 'Gold'],
     get correctAnswer() {
       return this.answers[2];
     }

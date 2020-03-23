@@ -6,7 +6,7 @@
 
 
 
-/* For device-widths 768 and Higher): */
+/* LARGE - For device-widths 768 and Higher: */
 
 @media screen and (min-width: 768px) {
 
@@ -313,7 +313,7 @@ body {
 .questionBox {
   font-size: 20pt;
   font-weight: 300;
-  width: 800px;
+  width: 740px;
   height: 300px;
   border: black 3px solid;
   border-radius: 3px;
@@ -326,7 +326,7 @@ body {
   text-align: center;
   font-size: 20pt;
   font-weight: 400;
-  width: 800px;
+  width: 740px;
   height: 300px;
   border: black 3px solid;
   border-radius: 3px;
@@ -370,7 +370,7 @@ li {
 
 
 
-/* SMALL/MOBILE (Device Width 480 and Lower): */
+/* SMALL - For device-widths 480 and Lower: */
 
 @media screen and (max-width: 480px) {
 
@@ -493,8 +493,8 @@ body {
 .questionBox {
   font-size: 20pt;
   font-weight: 300;
-  width: 800px;
-  height: 300px;
+  width: 460px;
+  height: 800px;
   border: black 3px solid;
   border-radius: 3px;
   margin: 10px auto;
@@ -506,8 +506,8 @@ body {
   text-align: center;
   font-size: 20pt;
   font-weight: 400;
-  width: 800px;
-  height: 300px;
+  width: 460px;
+  height: 800px;
   border: black 3px solid;
   border-radius: 3px;
   margin: 10px auto;
