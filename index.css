@@ -394,7 +394,7 @@ body {
   text-align: center;
   width: 300px;
   height: 100px;  
-  padding: 0px;
+  padding: 60px;
   margin: 100px auto;
   border: transparent 1px solid;
   border-radius: 3px;
@@ -494,11 +494,11 @@ body {
   font-size: 20pt;
   font-weight: 300;
   width: 310px;
-  height: 350px;
+  height: 410px;
   border: black 3px solid;
   border-radius: 3px;
   margin: 10px auto;
-  padding: 30px;
+  padding: 10px;
 }
 
 
