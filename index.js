@@ -60,6 +60,7 @@ function setInitialConditions() {
   $('.restartQuizButtonBox').hide();
   $('.startQuizContainer').show();
   $('#startButton').show();
+  $('.questionNumberAndScoreDisplay').show();
 }
 
 
