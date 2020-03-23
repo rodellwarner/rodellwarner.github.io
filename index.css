@@ -198,13 +198,13 @@
   color: black;
   text-align: center;
   font-size: 25pt;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 
 body {
   background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg-Edit2.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -312,7 +312,7 @@ body {
 
 .questionBox {
   font-size: 20pt;
-  font-weight: 400;
+  font-weight: 600;
   width: 740px;
   height: 300px;
   border: black 3px solid;
@@ -325,7 +325,7 @@ body {
 .responseBox {
   text-align: center;
   font-size: 20pt;
-  font-weight: 400;
+  font-weight: 600;
   width: 740px;
   height: 300px;
   border: black 3px solid;
