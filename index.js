@@ -37,7 +37,7 @@ const STORE = [
     question: 'When first built, what reflective material were the pyramids at Giza covered in?',
     answers: ['Quartz crystal', 'White limestone', 'Copper', 'Gold'],
     get correctAnswer() {
-      return this.answers[2];
+      return this.answers[1];
     }
   }
 ];
