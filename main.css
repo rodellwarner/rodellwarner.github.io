@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bio {
+  text-align: center;
+  color: white;
+  background-color: gray;
+  width: 90%;
+  height: 200px;
+  margin: 0px auto;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+.project {
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 90%;
+  background-color: darkgrey;
+  margin: 0px auto;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  width: 90%;
+  height: 50px;
+  background-color: lightgray;
+  margin: 0 auto;
+  padding: 10px;
+}
+
