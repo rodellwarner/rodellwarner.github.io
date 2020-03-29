@@ -2,43 +2,282 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+
+/* LARGE - For device-widths 768 and Higher: */
+
+@media screen and (min-width: 768px) {
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    color: white;
+    width: 500px;
+    height: 60px;
+    background-color: lightgray;
+    margin-left: 100px;
+    font-size: 20pt;
+    margin-bottom: 1px;
+  }
+  
+  .nav {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    display: none;
+    margin-bottom: 1px;
+  }
+  
+  .bio {
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+  
+  .project {
+    display: none;
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 90%;
+    background-color: darkgrey;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+  
+  .projectsButton {
+    width: 200px;
+    height: 80px;
+    border-radius: 3px;
+    border: solid 3px darkgrey;
+    font-size: 20pt;
+    color: white;
+    background-color: gray;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 800px;
+    bottom: 400px
+  }
+
+  .cvButton {
+    width: 200px;
+    height: 80px;
+    border-radius: 3px;
+    border: solid 3px darkgrey;
+    font-size: 20pt;
+    color: white;
+    background-color: gray;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 596px;
+    bottom: 300px
+  }
+
+  .contactButton {
+    width: 200px;
+    height: 80px;
+    border-radius: 3px;
+    border: solid 3px darkgrey;
+    font-size: 20pt;
+    color: white;
+    background-color: gray;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 392px;
+    bottom: 200px
+  }
+
+  .footer {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
 }
 
-h1 {
-  text-align: center;
+
+
+
+/* MEDIUM - For device-widths no larger than 768 and no smaller than 481px: */
+
+@media screen and (max-width: 768px) {
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    width: 90%;
+    font-size: 20pt;
+    margin: 0 auto;
+    margin-bottom: 1px;
+  }
+  
+  .nav {
+    text-align: center;
+    color: white;
+    width: 90%;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-bottom: 1px;
+  }
+  
+  .bio {
+    text-align: center;
+    color: white;
+    background-color: gray;
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+  
+  .project {
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 90%;
+    background-color: darkgrey;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+
+  .projectsButton {
+    display: none;
+  }
+
+  .cvButton {
+    display: none;
+  }
+
+  .contactButton {
+    display: none;
+  }
+  
+  .footer {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
 }
 
-.bio {
-  text-align: center;
-  color: white;
-  background-color: gray;
-  width: 90%;
-  height: 200px;
-  margin: 0px auto;
-  margin-bottom: 1px;
-  padding: 10px;
-}
 
-.project {
-  text-align: center;
-  color: white;
-  height: 200px;
-  width: 90%;
-  background-color: darkgrey;
-  margin: 0px auto;
-  margin-bottom: 1px;
-  padding: 10px;
-}
 
-.footer {
-  text-align: center;
-  color: white;
-  width: 90%;
-  height: 50px;
-  background-color: lightgray;
-  margin: 0 auto;
-  padding: 10px;
-}
 
+
+
+
+/* SMALL - For device-widths 480 and Lower: */
+
+@media screen and (max-width: 480px) {
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    width: 460px;
+    margin-bottom: 1px;
+  }
+  
+  .nav {
+    text-align: center;
+    color: white;
+    width: 460px;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-bottom: 1px;
+  }
+  
+  .bio {
+    text-align: center;
+    color: white;
+    background-color: gray;
+    width: 460px;
+    height: 200px;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+  
+  .project {
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 460px;
+    background-color: darkgrey;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+
+  .projectsButton {
+    display: none;
+  }
+
+  .cvButton {
+    display: none;
+  }
+
+  .contactButton {
+    display: none;
+  }
+  
+  .footer {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+}
