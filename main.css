@@ -9,111 +9,178 @@
 @media screen and (min-width: 768px) {
 
 
+
+  #container {
+    min-height:100%;
+    position:relative;
+  }
+
+  #globe {
+    width: 60px;
+    position: relative;
+    left: 1100px;
+    top: 100px;
+  }
+
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-image: url(background-1.png);
+    background-size: cover; */
+    position: relative;
   }
   
-  .hero {
-    text-align: center;
-    color: white;
+  header {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
     width: 500px;
-    height: 60px;
-    background-color: lightgray;
-    margin-left: 100px;
-    font-size: 20pt;
+    height: 50px;
+    margin-left: 10vw;
     margin-bottom: 1px;
-  }
-  
-  .nav {
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    display: none;
-    margin-bottom: 1px;
+    margin-top: 70px;
+    padding: 10px;
   }
   
   .bio {
-    text-align: center;
+    font-weight: 200;
+    text-align: left;
     font-size: 20pt;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
     width: 500px;
     height: 500px;
-    margin-left: 100px;
+    margin-left: 10vw;
     margin-bottom: 1px;
+    margin-top: 40px;
     padding: 10px;
   }
+
+  #projectsLabel {
+    font-weight: 200;
+    font-size: 40pt;
+    margin-left: 10vw;
+    margin-bottom: 100px;
+  }
   
-  .project {
-    display: none;
+  .pyramidQuiz {
+    /* background-image: url(images/pyramid-quiz-background.png);
+    background-size: cover;
+    font-weight: 200; */
     text-align: center;
     color: white;
-    height: 200px;
+    height: 600px;
     width: 90%;
-    background-color: darkgrey;
     margin: 0px auto;
     margin-bottom: 1px;
     padding: 10px;
+    padding-bottom: 40px;
+  }
+
+  #pyramidQuizIpad {
+    width: 70%;
+    border-radius: 5px;
+    padding: 0px;
+  }
+
+  #pyramidQuizMobile {
+    height: 250px;
+    border-radius: 5px;
+    border: solid 4px black;
+    position: relative;
+    right: 80px;
+    top: 40px;
+  }
+
+  .project2 {
+    display: none;
+  }
+
+  .nav {
+    width: 40vw;
+    height: 60px;
+  }
+
+  .navUnorderedList {
+    color: lightgray;
+    position: relative;
+    left: 70vw;
+  }
+
+  .navList {
+    list-style: none;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 30pt;
+  }
+
+  #contact {
+    padding-left: 20px;
   }
   
   .projectsButton {
+    font-weight: 200;
     width: 200px;
     height: 80px;
-    border-radius: 3px;
-    border: solid 3px darkgrey;
+    border-radius: 6px;
+    border: solid 1px black;
     font-size: 20pt;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: transparent;
     margin: 0 0 0 0px;
     position: relative;
     left: 800px;
-    bottom: 400px
+    bottom: 400px;
   }
 
   .cvButton {
+    display: none;
+    font-weight: 200;
     width: 200px;
     height: 80px;
-    border-radius: 3px;
-    border: solid 3px darkgrey;
+    border-radius: 6px;
+    border: solid 1px black;
     font-size: 20pt;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: transparent;
     margin: 0 0 0 0px;
     position: relative;
     left: 596px;
-    bottom: 300px
+    bottom: 300px;
   }
 
   .contactButton {
+    display: none;
+    font-weight: 200;
     width: 200px;
     height: 80px;
-    border-radius: 3px;
-    border: solid 3px darkgrey;
+    border-radius: 6px;
+    border: solid 1px black;
     font-size: 20pt;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: transparent;
     margin: 0 0 0 0px;
     position: relative;
     left: 392px;
-    bottom: 200px
+    bottom: 200px;
   }
 
   .footer {
+    font-weight: 200;
+    font-size: 20pt;
     text-align: center;
-    color: white;
-    width: 200px;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    padding: 0px;
-    position: absolute;
+    color: black;
+    height: 200px;
+    width: 100vw;
+    background-color: transparent;
+    /* margin: 0 auto;
+    padding: 0px; */
+    position: relative;
+    padding-top: 100px;
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    margin: 0 auto;
   }
 
 }
@@ -127,10 +194,11 @@
 
 
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   
   .hero {
+    font-weight: 200;
     text-align: center;
     color: white;
     background-color: lightgray;
@@ -141,6 +209,7 @@
   }
   
   .nav {
+    font-weight: 200;
     text-align: center;
     color: white;
     width: 90%;
@@ -151,6 +220,7 @@
   }
   
   .bio {
+    font-weight: 200;
     text-align: center;
     color: white;
     background-color: gray;
@@ -162,6 +232,7 @@
   }
   
   .project {
+    font-weight: 200;
     text-align: center;
     color: white;
     height: 200px;
@@ -185,6 +256,7 @@
   }
   
   .footer {
+    font-weight: 200;
     text-align: center;
     color: white;
     width: 100%;
@@ -212,19 +284,216 @@
 @media screen and (max-width: 375px) {
 
 
+  #container {
+    min-height:100%;
+    position:relative;
+  }
+
+  #globe {
+    display: none;
+    width: 60px;
+    position: relative;
+    left: 1100px;
+    top: 100px;
+  }
+
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-image: url(background-1.png);
+    background-size: cover; */
+    position: relative;
+  }
+  
+  header {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 500px;
+    height: 50px;
+    margin-left: 10vw;
+    margin-bottom: 1px;
+    margin-top: 70px;
+    padding: 10px;
+  }
+  
+  .bio {
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 80vw;
+    height: 500px;
+    margin-left: 10vw;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+
+  #projectsLabel {
+    text-align: center;
+    font-weight: 200;
+    font-size: 40pt;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 40px;
+  }
+
+  .project {
+    background-color: transparent;
+  }
+  
+  .pyramidQuiz {
+    text-align: center;
+    color: white;
+    height: 600px;
+    width: 100vw;
+    margin: 0px auto;
+    margin-bottom: 1px;
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+
+  #pyramidQuizIpad {
+    width: 90vw;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #pyramidQuizMobile {
+    margin: 0 auto;
+    width: 50vw;
+    border-radius: 5px;
+    border: solid 4px black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .project2 {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    width: 40vw;
+    height: 60px;
+  }
+
+  .navUnorderedList {
+    color: lightgray;
+    position: relative;
+    left: 70vw;
+  }
+
+  .navList {
+    list-style: none;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 30pt;
+  }
+
+  #contact {
+    padding-left: 20px;
+  }
+  
+  .projectsButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 800px;
+    bottom: 400px;
+  }
+
+  .cvButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 596px;
+    bottom: 300px;
+  }
+
+  .contactButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 392px;
+    bottom: 200px;
+  }
+
+  .footer {
+    font-weight: 200;
+    font-size: 20pt;
+    text-align: center;
+    color: black;
+    height: 200px;
+    width: 100vw;
+    background-color: transparent;
+    /* margin: 0 auto;
+    padding: 0px; */
+    position: relative;
+    padding-top: 100px;
+    bottom: 0;
+  }
+
+
+
+
+
+
+
+  /* body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  p {
+    padding: 0px;
+    margin: 0px;
   }
   
   .hero {
+    font-weight: 200;
     text-align: center;
     color: white;
     background-color: lightgray;
-    width: 360px;
+    width: 100vw;
+    padding: 0px;
+    border: none;
     margin-bottom: 1px;
   }
   
   .nav {
+    display: none;
+    font-weight: 200;
     text-align: center;
     color: white;
     width: 360px;
@@ -235,10 +504,11 @@
   }
   
   .bio {
+    font-weight: 200;
     text-align: center;
     color: white;
     background-color: gray;
-    width: 360px;
+    width: 100vw;
     height: 200px;
     margin: 0px auto;
     margin-bottom: 1px;
@@ -246,12 +516,13 @@
   }
   
   .project {
+    font-weight: 200;
     text-align: center;
     color: white;
     height: 200px;
-    width: 360px;
+    width: 100vw;
     background-color: darkgrey;
-    margin: 0px auto;
+    margin: 0px;
     margin-bottom: 1px;
     padding: 10px;
   }
@@ -269,18 +540,19 @@
   }
   
   .footer {
+    font-weight: 200;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 30px;
     background-color: lightgray;
     margin: 0 auto;
     padding: 0px;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;
+    width: 100vw;
+    height: 50px;
     margin: 0 auto;
-  }
+  } */
 
 }
