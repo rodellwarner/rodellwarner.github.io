@@ -16,6 +16,7 @@
   }
 
   #globe {
+    display: none;
     width: 60px;
     position: relative;
     left: 1100px;
@@ -290,11 +291,12 @@
   }
 
   #globe {
-    display: none;
-    width: 60px;
-    position: relative;
+    width: 90px;
+    margin-left: 5vw;
+    margin-top: 50px;
+    /* position: relative;
     left: 1100px;
-    top: 100px;
+    top: 100px; */
   }
 
   body {
@@ -311,11 +313,10 @@
     color: black;
     background-color: transparent;
     border-radius: 6px;
-    width: 500px;
-    height: 50px;
+    width: 90vw;
+    height: 80px;
     margin-left: 10vw;
-    margin-bottom: 1px;
-    margin-top: 70px;
+    margin-top: 50px;
     padding: 10px;
   }
   
@@ -330,7 +331,7 @@
     height: 500px;
     margin-left: 10vw;
     margin-bottom: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 10px;
     padding-bottom: 30px;
   }
@@ -368,7 +369,7 @@
 
   #pyramidQuizMobile {
     margin: 0 auto;
-    width: 50vw;
+    width: 60vw;
     border-radius: 5px;
     border: solid 4px black;
     margin-top: 40px;
@@ -463,96 +464,8 @@
     position: relative;
     padding-top: 100px;
     bottom: 0;
+    margin-top: 40px;
   }
 
-
-
-
-
-
-
-  /* body {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  p {
-    padding: 0px;
-    margin: 0px;
-  }
-  
-  .hero {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    background-color: lightgray;
-    width: 100vw;
-    padding: 0px;
-    border: none;
-    margin-bottom: 1px;
-  }
-  
-  .nav {
-    display: none;
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    width: 360px;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    margin-bottom: 1px;
-  }
-  
-  .bio {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    background-color: gray;
-    width: 100vw;
-    height: 200px;
-    margin: 0px auto;
-    margin-bottom: 1px;
-    padding: 10px;
-  }
-  
-  .project {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    height: 200px;
-    width: 100vw;
-    background-color: darkgrey;
-    margin: 0px;
-    margin-bottom: 1px;
-    padding: 10px;
-  }
-
-  .projectsButton {
-    display: none;
-  }
-
-  .cvButton {
-    display: none;
-  }
-
-  .contactButton {
-    display: none;
-  }
-  
-  .footer {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    width: 100vw;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    padding: 0px;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 50px;
-    margin: 0 auto;
-  } */
 
 }
