@@ -4,33 +4,84 @@
 
 
 
-/* LARGE - For device-widths 768 and Higher: */
+/* LARGE - For device-widths 1025 and Higher: */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
 
-
-
-  #container {
-    min-height:100%;
-    position:relative;
-  }
-
-  #globe {
-    display: none;
-    width: 60px;
-    position: relative;
-    left: 1100px;
-    top: 100px;
-  }
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-image: url(background-1.png);
-    background-size: cover; */
+    margin: 0px;
+    background-color: white;
+    max-width: 2400px;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  #globe {
+    width: 60px;
     position: relative;
+    left: 130px;
+    top: 510px;
+    z-index: 2;
+  }
+
+  .portraitContainer {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    margin-left: 17vw;
+    margin-top: 40px;
+    z-index: 1;
+  }
+
+  #portrait {
+    width: 250px;
+    height: 375px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+
+  .portraitContainerSquare {
+    display: none;
+  }
+
+  #portraitSquare {
+    display: none;
+  }
+
+  #palmLeaf {
+    width: 500px;
+    height: 500 px;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    z-index: 2;
+  }
+
+  #rod {
+    position: absolute;
+    left: 400px;
+    top: -450px;
+    z-index: 2;
+  }
+
+  #pyramid {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 1200px;
+    z-index: 2;
+  }
+
+  .diamond {
+    margin-top: 0px;
   }
   
   header {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
     font-size: 40pt;
@@ -38,62 +89,73 @@
     background-color: transparent;
     border-radius: 6px;
     width: 500px;
-    height: 50px;
-    margin-left: 10vw;
-    margin-bottom: 1px;
-    margin-top: 70px;
-    padding: 10px;
+    height: 60px;
+    margin-left: 40vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
   }
   
   .bio {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     text-align: left;
     font-size: 20pt;
     color: black;
-    background-color: transparent;
+    background-color: white;
     border-radius: 6px;
     width: 500px;
     height: 500px;
-    margin-left: 10vw;
-    margin-bottom: 1px;
+    margin-left: 40vw;
+    margin-bottom: 300px;
     margin-top: 40px;
-    padding: 10px;
+    padding: 30px;
+  }
+
+  .arrow {
+    font-size: 30pt;
+    font-weight: 200;
   }
 
   #projectsLabel {
+    display: none;
+    text-align: center;
     font-weight: 200;
-    font-size: 40pt;
-    margin-left: 10vw;
+    font-size: 20pt;
+    width: 100vw;
+    height: 100px;
+    margin-left: 0px;
     margin-bottom: 100px;
+    background-color: whitesmoke;
   }
   
   .pyramidQuiz {
-    /* background-image: url(images/pyramid-quiz-background.png);
-    background-size: cover;
-    font-weight: 200; */
-    text-align: center;
     color: white;
-    height: 600px;
-    width: 90%;
+    height: 900px;
+    max-width: 2400px;
     margin: 0px auto;
-    margin-bottom: 1px;
-    padding: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 0px;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
   }
 
   #pyramidQuizIpad {
     width: 70%;
     border-radius: 5px;
-    padding: 0px;
+    padding-top: 0px;
+    position: relative;
+    left: 150px;
   }
 
   #pyramidQuizMobile {
-    height: 250px;
+    height: 475px;
     border-radius: 5px;
-    border: solid 4px black;
+    border: solid 3px black;
     position: relative;
-    right: 80px;
+    left: 80px;
     top: 40px;
+    padding: 0px;
   }
 
   .project2 {
@@ -103,26 +165,37 @@
   .nav {
     width: 40vw;
     height: 60px;
+    background-color: white;
   }
 
   .navUnorderedList {
+    display: none;
     color: lightgray;
     position: relative;
     left: 70vw;
+    background-color: rgb(255, 254, 204);
   }
 
   .navList {
+    display: none;
     list-style: none;
     display: inline-block;
     font-weight: 200;
     font-size: 30pt;
+    background-color: rgb(255, 254, 204);
   }
 
   #contact {
+    display: none;
     padding-left: 20px;
+  }
+
+  #cv {
+    display: none;
   }
   
   .projectsButton {
+    display: none;
     font-weight: 200;
     width: 200px;
     height: 80px;
@@ -173,10 +246,10 @@
     font-weight: 200;
     font-size: 20pt;
     text-align: center;
-    color: black;
+    color: white;
     height: 200px;
     width: 100vw;
-    background-color: transparent;
+    background-color: black;
     /* margin: 0 auto;
     padding: 0px; */
     position: relative;
@@ -189,223 +262,247 @@
 
 
 
-/* MEDIUM - For device-widths no larger than 768 and no smaller than 481px: */
+/* MEDIUM - For device-widths no larger than 1024 and no smaller than 768px: */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+
+
+  /* MEDIUM */
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-  }
-  
-  .hero {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    background-color: lightgray;
-    width: 90%;
-    font-size: 20pt;
-    margin: 0 auto;
-    margin-bottom: 1px;
-  }
-  
-  .nav {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    width: 90%;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    margin-bottom: 1px;
-  }
-  
-  .bio {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    background-color: gray;
-    width: 90%;
-    height: 200px;
-    margin: 0px auto;
-    margin-bottom: 1px;
-    padding: 10px;
-  }
-  
-  .project {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    height: 200px;
-    width: 90%;
-    background-color: darkgrey;
-    margin: 0px auto;
-    margin-bottom: 1px;
-    padding: 10px;
+    margin: 0px;
+    background-color: white;
+    max-width: 2400px;
   }
 
-  .projectsButton {
-    display: none;
+  /* MEDIUM */
+
+  main {
+    background-color: white;
   }
 
-  .cvButton {
-    display: none;
-  }
-
-  .contactButton {
-    display: none;
-  }
-  
-  .footer {
-    font-weight: 200;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 30px;
-    background-color: lightgray;
-    margin: 0 auto;
-    padding: 0px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    margin: 0 auto;
-  }
-
-}
-
-
-
-
-
-
-
-/* SMALL - For device-widths 480 and Lower: */
-
-@media screen and (max-width: 375px) {
-
-
-  #container {
-    min-height:100%;
-    position:relative;
-  }
+  /* MEDIUM */
 
   #globe {
-    width: 90px;
-    margin-left: 5vw;
-    margin-top: 50px;
+    width: 60px;
+    position: relative;
+    left: 370px;
+    top: -10px;
+    z-index: 2;
   }
 
-  #blackHole {
-    position: relative;
-    left: 200px;
-    top: 800px;
+  /* MEDIUM */
+
+  .portraitContainer {
+    display: none;
   }
 
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    /* background-image: url(background-1.png);
-    background-size: cover; */
-    position: relative;
+  /* MEDIUM */
+
+  #portrait {
+    display: none;
   }
+
+  /* MEDIUM */
+
+  .portraitContainerSquare {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -120px;
+    z-index: 1;
+  }
+
+  /* MEDIUM */
+
+  #portraitSquare {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+  }
+
+  /* MEDIUM */
+
+  #palmLeaf {
+    width: 200px;
+    height: 500 px;
+    position: absolute;
+    left: 370px;
+    top: 0px;
+    z-index: 2;
+  }
+
+  /* MEDIUM */
+
+  #rod {
+    display: none;
+    position: absolute;
+    left: 400px;
+    top: -450px;
+    z-index: 2;
+  }
+
+  /* MEDIUM */
+
+  #pyramid {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 900px;
+    z-index: 2;
+  }
+
+  /* MEDIUM */
+
+  .diamond {
+    margin-top: 0px;
+  }
+
+  /* MEDIUM */
   
   header {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
     font-size: 40pt;
     color: black;
     background-color: transparent;
     border-radius: 6px;
-    width: 90vw;
-    height: 80px;
-    margin-left: 10vw;
-    margin-top: 20px;
-    padding: 10px;
+    width: 500px;
+    height: 60px;
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
   }
+
+  /* MEDIUM */
   
   .bio {
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     text-align: left;
-    font-size: 15pt;
+    font-size: 20pt;
     color: black;
-    background-color: transparent;
+    background-color: white;
     border-radius: 6px;
-    width: 80vw;
+    width: 500px;
     height: 500px;
-    margin-left: 10vw;
-    margin-bottom: 60px;
-    margin-top: 0px;
-    padding: 10px;
-    padding-bottom: 30px;
-    padding-top: 0px;
+    margin-left: 5vw;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    padding: 30px;
   }
+
+  /* MEDIUM */
+
+  .arrow {
+    font-size: 30pt;
+    font-weight: 200;
+  }
+
+  /* MEDIUM */
 
   #projectsLabel {
+    display: none;
     text-align: center;
     font-weight: 200;
-    font-size: 40pt;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    padding: 40px;
+    font-size: 20pt;
+    width: 100vw;
+    height: 100px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
   }
 
-  .project {
-    background-color: transparent;
-  }
+  /* MEDIUM */
   
   .pyramidQuiz {
-    text-align: center;
     color: white;
-    height: 600px;
+    height: 900px;
     width: 100vw;
     margin: 0px auto;
-    margin-bottom: 1px;
-    padding: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 0px;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
   }
+
+  /* MEDIUM */
 
   #pyramidQuizIpad {
-    width: 90vw;
+    width: 600px;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 0px;
+    position: relative;
+    left: 150px;
   }
 
+  /* MEDIUM */
+
   #pyramidQuizMobile {
-    margin: 0 auto;
-    width: 60vw;
+    width: 400px;
     border-radius: 5px;
-    border: solid 4px black;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    border: solid 3px black;
+    position: relative;
+    left: 80px;
+    top: 40px;
+    padding: 0px;
   }
+
+  /* MEDIUM */
 
   .project2 {
     display: none;
   }
 
+  /* MEDIUM */
+
   .nav {
-    display: none;
     width: 40vw;
     height: 60px;
+    background-color: white;
   }
 
+  /* MEDIUM */
+
   .navUnorderedList {
+    display: none;
     color: lightgray;
     position: relative;
     left: 70vw;
+    background-color: rgb(255, 254, 204);
   }
 
+  /* MEDIUM */
+
   .navList {
+    display: none;
     list-style: none;
     display: inline-block;
     font-weight: 200;
     font-size: 30pt;
+    background-color: rgb(255, 254, 204);
   }
 
+  /* MEDIUM */
+
   #contact {
+    display: none;
     padding-left: 20px;
   }
+
+  /* MEDIUM */
+
+  #cv {
+    display: none;
+  }
+
+  /* MEDIUM */
   
   .projectsButton {
     display: none;
@@ -423,6 +520,8 @@
     bottom: 400px;
   }
 
+  /* MEDIUM */
+
   .cvButton {
     display: none;
     font-weight: 200;
@@ -438,6 +537,8 @@
     left: 596px;
     bottom: 300px;
   }
+
+  /* MEDIUM */
 
   .contactButton {
     display: none;
@@ -455,20 +556,340 @@
     bottom: 200px;
   }
 
+  /* MEDIUM */
+
   .footer {
     font-weight: 200;
     font-size: 20pt;
     text-align: center;
-    color: black;
+    color: white;
     height: 200px;
     width: 100vw;
-    background-color: transparent;
+    background-color: black;
     /* margin: 0 auto;
     padding: 0px; */
     position: relative;
     padding-top: 100px;
     bottom: 0;
-    margin-top: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+/* SMALL - For device-widths 375 and Lower: */
+
+@media screen and (max-width: 375px) {
+
+
+  /* SMALL */
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    background-color: white;
+    max-width: 2400px;
+  }
+
+  /* SMALL */
+
+  main {
+    background-color: white;
+  }
+
+  /* SMALL */
+
+  #globe {
+    display: none;
+    width: 60px;
+    position: relative;
+    left: 370px;
+    top: -10px;
+    z-index: 2;
+  }
+
+  /* SMALL */
+
+  .portraitContainer {
+    display: none;
+  }
+
+  /* SMALL */
+
+  #portrait {
+    display: none;
+  }
+
+  /* SMALL */
+
+  #portraitSquare {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 30px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+  /* SMALL */
+
+  #palmLeaf {
+    display: none;
+    width: 200px;
+    height: 500 px;
+    position: absolute;
+    left: 370px;
+    top: 0px;
+    z-index: 2;
+  }
+
+  /* SMALL */
+
+  #rod {
+    display: none;
+    position: absolute;
+    left: 400px;
+    top: -450px;
+    z-index: 2;
+  }
+
+  /* SMALL */
+
+  #pyramid {
+    display: none;
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 900px;
+    z-index: 2;
+  }
+
+  /* SMALL */
+
+  .diamond {
+    display: none;
+    margin-top: 0px;
+  }
+
+  /* SMALL */
+  
+  header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100vw;
+    height: 60px;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    margin-top: 120px;
+    padding-left: 30px;
+  }
+
+  /* SMALL */
+  
+  .bio {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    width: 100vw;
+    height: 500px;
+    margin-left: 0vw;
+    margin-bottom: 100px;
+    margin-top: 0px;
+    padding: 30px;
+  }
+
+  /* SMALL */
+
+  .arrow {
+    font-size: 30pt;
+    font-weight: 200;
+  }
+
+  /* SMALL */
+
+  #projectsLabel {
+    display: none;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20pt;
+    width: 100vw;
+    height: 100px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+  }
+
+  /* SMALL */
+  
+  .pyramidQuiz {
+    color: white;
+    height: 900px;
+    width: 100vw;
+    margin: 0px auto;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
+  }
+
+  /* SMALL */
+
+  #pyramidQuizIpad {
+    display: none;
+    width: 600px;
+    border-radius: 5px;
+    padding-top: 0px;
+    position: relative;
+    left: 150px;
+  }
+
+  /* SMALL */
+
+  #pyramidQuizMobile {
+    width: 300px;
+    border-radius: 5px;
+    border: solid 3px black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  /* SMALL */
+
+  .project2 {
+    display: none;
+  }
+
+  /* SMALL */
+
+  .nav {
+    display: none;
+    width: 40vw;
+    height: 60px;
+    background-color: white;
+  }
+
+  /* SMALL */
+
+  .navUnorderedList {
+    display: none;
+    color: lightgray;
+    position: relative;
+    left: 70vw;
+    background-color: rgb(255, 254, 204);
+  }
+
+  /* SMALL */
+
+  .navList {
+    display: none;
+    list-style: none;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 30pt;
+    background-color: rgb(255, 254, 204);
+  }
+
+  /* SMALL */
+
+  #contact {
+    display: none;
+    padding-left: 20px;
+  }
+
+  /* SMALL */
+
+  #cv {
+    display: none;
+  }
+
+  /* SMALL */
+  
+  .projectsButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 800px;
+    bottom: 400px;
+  }
+
+  /* SMALL */
+
+  .cvButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 596px;
+    bottom: 300px;
+  }
+
+  /* SMALL */
+
+  .contactButton {
+    display: none;
+    font-weight: 200;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 20pt;
+    color: black;
+    background-color: transparent;
+    margin: 0 0 0 0px;
+    position: relative;
+    left: 392px;
+    bottom: 200px;
+  }
+
+  /* SMALL */
+
+  .footer {
+    font-weight: 200;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 375px;
+    background-color: black;
+    /* margin: 0 auto;
+    padding: 0px; */
+    position: relative;
+    padding-top: 100px;
+    bottom: 0;
   }
 
 
