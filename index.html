@@ -11,14 +11,6 @@
 
 <body>
 
-  <nav class="nav">
-    <ul class="navUnorderedList">
-      <li id="cv" class="navList">CV</li>
-      <li id="contact" class="navList">Contact</li>
-    </ul>
-  </nav>
-
-  
   <main>
 
     <img src="images/rw_globe.gif" id="globe">
@@ -31,14 +23,24 @@
 
     <header>Hi, I'm Rodell</header>
 
-    <section class="portraitContainer"><img src="images/rodell.jpeg" id="portrait"></section>
+    <section class="portraitContainer"><img src="images/rodell.jpeg" id="portrait">
+      <!-- <nav>
+        <ul class="navUnorderedList">
+          <li id="navProjects" class="navList">Projects</li>
+          <li class="navList">|</li>
+          <li id="navAboutMe" class="navList">About me</li>
+          <li class="navList">|</li>
+          <li id="navContact" class="navList">Contact</li>
+        </ul>
+      </nav> -->
+    </section>
 
     <img src="images/rodell_sq.jpg" id="portraitSquare">
 
     <section class="bio">
       <p class="diamond">⬫</p>
       <p>I'm a full-stack developer and graphic designer, and I'm passionate about creating beautiful experiences online.</p>
-      <p>Working at the intersection of coding and the visual allows me to make websites that people love to use.</p>
+      <p>Working at the intersection of coding and image-making allows me to build websites that people love to use.</p>
       <p>Take a look below to see some of my work.</p>
       <p class="arrow">↡</p>
     </section>
@@ -46,22 +48,77 @@
     <section id="projectsLabel">Projects</section>
 
     <section class="pyramidQuiz">
+      
       <img src="images/pyramid-quiz-screenshots/pyramid-quiz-laptop-6.png" alt="pyramid quiz screenshot iPad Pro" id="pyramidQuizIpad">
       <img src="images/pyramid-quiz-screenshots/pyramid-quiz-mobile.png" alt="pyramid quiz screenshot mobile" id="pyramidQuizMobile">
+      
+      <div class="pyramidQuizHeading">Pyramid Quiz</div>
+
+      <div class="pyramidQuizDescription">
+        <!-- <p class="diamond">⧊</p> -->
+        <p>Test your knowledge of the aincient pyramids of Egypt!</p>
+        <p>I created <b>Pyramid Quiz</b> as part of <a href="https://www.thinkful.com/" target="_blank">Thinkful's</a> software engineering program. I used vanilla JavaScript with jQuery, HTML, and CSS to build this short-but-sweet trivia challenge.</p>
+      </div>
+
+      <div class="pyramidButtonContainer">
+        <form action="pyramid-quiz/index.html" target="_blank">
+          <input type="submit" class="button" id="pyramidViewLiveButton" value="VIEW LIVE SITE">
+        </form>
+        <form action="https://github.com/thirteenzeros/pyramid-quiz" target="_blank">
+          <input type="submit" class="button" id="pyramidViewCodeButton" value="VIEW CODE">
+        </form>
+      </div>
+
     </section>
 
-    <section class="project project2">
+    <section id="aboutMeLabel">About me</section>
+
+    <section class="aboutMe">
+
+      <div class="aboutMeHeading">I'm looking for the right fit.</div>
+
+      <div class="aboutMeDescription">
+        <p>I learn best and shine brightest when I'm part of a dynamic group.</p>
+        <p>Give me an objective I can focus on and </p>
+      </div>
+
+      <div class="aboutMeHeading">I'm an artist</div>
+
+      <div class="aboutMeDescription">
+        <p>When I'm not coding I'm devoted to my visual art practice.</p>
+        <p>Since 2009 I've been making digital animations and interactive installations, and exhibiting my projects all over the world.</p>
+        <p>Click the button below to see some of my favorite things.</p>
+      </div>
+
+      <div class="goToRodellWarnerButtonContainer">
+        <form action="https://rodellwarner.com/" target="_blank">
+          <input type="submit" class="button" id="goToRodellWarnerButton" value="GO TO RODELLWARNER.COM">
+        </form>
+      </div>
+
     </section>
 
-    <input class="projectsButton" type="button" value="Projects">
+    <section id="contactLabel">Contact</section>
 
-    <input class="cvButton" type="button" value="CV">
+    <section class="contact">
 
-    <input class="contactButton" type="button" value="Contact">
+      <div class="contactDetails">
+        <p>Send me an email at <a href="mailto: rodell.warner@gmail.com" target="_blank" class=“emailMe”>rodell.warner@gmail.com</a></p>
+        <p>or find me on <a href="https://github.com/thirteenzeros">GitHub</a> or <a href="https://www.linkedin.com/in/rodell-warner-8069b81a5">LinkedIn</a>.</p>
+      </div>
+    </section>
 
   </main>
 
   <footer class="footer">∴∵</footer>
+
+
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
 
 </body>
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" type="A quiz about the ancient pyramids of Egypt">
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,600&display=swap" rel="stylesheet">
+  <title>Pyramid Quiz!</title>
+</head>
+<body>
+  <header class="header">
+    <p>◭◭◭</p><p>Questions About The Mysterious Pyramids of Giza in Egypt</p>
+
+    <section role="questionAndScoreContainer">
+      <ul class="questionNumberAndScoreDisplay">
+        <li>Question:
+          <span class="questionNumber">0</span>/5
+        </li>
+        <li class="scoreDisplay">Score:
+          <span class="scoreNumber">0</span>
+        </li>
+      </ul>
+    </section>
+  </header>
+  
+  <section class="startQuizContainer">
+    <button id="startButton" class="button" type="button">Start Quiz</button>
+  </section>
+
+  <section class="questionBox"></section>
+
+  <section class="responseBox"></section>
+
+  <section class="endOfQuizBox"></section>
+
+  <section class = "submitButtonBox">
+    <input type="submit" id="submitButton" form="quizForm" name="answerChoice" class="blackButton" value="Submit Answer">
+  </section>
+
+  <section class = "nextQuestionButtonBox">
+    <input type="button" id="nextQuestionButton" class="blackButton" value="Next Question">
+  </section>
+
+  <section class = "finalNextButtonBox">
+    <input type="button" id="finalNextButton" class="blackButton" value="Next">
+  </section>
+
+  <section class = "restartQuizButtonBox">
+    <button id="restartQuizButton" class="button" type="button">Restart Quiz</button>
+  </section>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>

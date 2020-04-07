@@ -1,0 +1,733 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+/* LARGE - For device-widths 768 and Higher: */
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    color: black;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 400;
+  }
+  
+  
+  body {
+    background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg-Edit2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  .startQuizContainer {
+    text-align: center;
+    width: 300px;
+    height: 100px;  
+    padding: 0px;
+    margin: 100px auto;
+    border: transparent 1px solid;
+    border-radius: 3px;
+  }
+  
+  
+  .submitButtonBox {
+    text-align: center;
+    width: 300px;
+    height: 100px;  
+    padding: 0px;
+    margin: 0px auto;
+    border: transparent 1px solid;
+    border-radius: 3px;
+  }
+  
+  
+  .nextQuestionButtonBox {
+    text-align: center;
+    width: 300px;
+    height: 100px;  
+    padding: 0px;
+    margin: 0px auto;
+    border: transparent 1px solid;
+    border-radius: 3px;
+  }
+  
+  
+  .finalNextButtonBox {
+    text-align: center;
+    width: 300px;
+    height: 100px;  
+    padding: 0px;
+    margin: 0px auto;
+    border: transparent 1px solid;
+    border-radius: 3px;
+  }
+  
+  
+  .restartQuizButtonBox {
+    text-align: center;
+    width: 300px;
+    height: 100px;  
+    padding: 0px;
+    margin: 0px auto;
+    border: transparent 1px solid;
+    border-radius: 3px;
+  }
+  
+  
+  .blackButton {
+    background-color: transparent;
+    color: black;
+    border: black 3px solid;
+    border-radius: 3px;
+    font-size: 25pt;
+    font-weight: 400;
+    margin: 0px auto;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .button {
+    background-color: transparent;
+    color: black;
+    border: black 3px solid;
+    border-radius: 3px;
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 0px auto;
+    cursor: pointer;
+  }
+  
+  
+  #submitButton {
+    margin-top: 30px;
+  }
+  
+  
+  #nextQuestionButton {
+    margin-top: 30px;
+  }
+  
+  
+  #finalNextButton {
+    margin-top: 30px;
+  }
+  
+  
+  #restartQuizButton {
+    margin-top: 30px;
+  }
+  
+  
+  .questionBox {
+    font-size: 20pt;
+    font-weight: 400;
+    width: 800px;
+    height: 300px;
+    border: black 3px solid;
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 30px;
+  }
+  
+  
+  .responseBox {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 400;
+    width: 800px;
+    height: 300px;
+    border: black 3px solid;
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 60px;
+  }
+  
+  
+  .endOfQuizBox {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+    width: 200px;
+    height: 300px;
+    border: black 3px solid;
+    border-radius: 3px;
+    margin: 0px auto;
+    padding: 60px;
+  }
+  
+  
+  li {
+    list-style: none;
+  }
+  
+  
+  .questionNumber {
+    text-decoration: none;
+  }
+  
+  
+  .questionNumberAndScoreDisplay {
+    font-size: 14pt;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  }
+
+
+
+
+
+
+
+/* MEDIUM - For device-widths no smaller larger than 768 and no smaller than 481px: */
+
+@media screen and (max-width: 768px) {
+
+.header {
+  color: black;
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 700;
+}
+
+
+body {
+  background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg-Edit2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.startQuizContainer {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 100px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.submitButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.nextQuestionButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.finalNextButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.restartQuizButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.blackButton {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 25pt;
+  font-weight: 400;
+  margin: 0px auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.button {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+
+#submitButton {
+  margin-top: 30px;
+}
+
+
+#nextQuestionButton {
+  margin-top: 30px;
+}
+
+
+#finalNextButton {
+  margin-top: 30px;
+}
+
+
+#restartQuizButton {
+  margin-top: 30px;
+}
+
+
+.questionBox {
+  font-size: 20pt;
+  font-weight: 600;
+  width: 740px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+
+.responseBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 600;
+  width: 740px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 60px;
+}
+
+
+.endOfQuizBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 600;
+  width: 200px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 0px auto;
+  padding: 60px;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+.questionNumber {
+  text-decoration: none;
+}
+
+
+.questionNumberAndScoreDisplay {
+  font-size: 14pt;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+
+
+/* SMALL - For device-widths 480 and Lower: */
+
+@media screen and (max-width: 480px) {
+
+.header {
+  color: black;
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+
+body {
+  background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg-Edit2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.startQuizContainer {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 40px;
+  margin: 180px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.submitButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.nextQuestionButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.finalNextButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.restartQuizButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.blackButton {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 25pt;
+  font-weight: 400;
+  margin: 0px auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.button {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+
+#submitButton {
+  margin-top: 30px;
+}
+
+
+#nextQuestionButton {
+  margin-top: 30px;
+}
+
+
+#finalNextButton {
+  margin-top: 30px;
+}
+
+
+#restartQuizButton {
+  margin-top: 30px;
+}
+
+
+.questionBox {
+  font-size: 20pt;
+  font-weight: 400;
+  width: 310px;
+  height: 410px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+
+.responseBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 400;
+  width: 310px;
+  height: 350px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 60px;
+}
+
+
+.endOfQuizBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 600;
+  width: 200px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 0px auto;
+  padding: 60px;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+.questionNumber {
+  text-decoration: none;
+}
+
+
+.questionNumberAndScoreDisplay {
+  font-size: 14pt;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ***Quiz-App CSS (original)***
+
+.header {
+  color: black;
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+
+body {
+  background-image: url(Cairo_pyramids_Dec_2008_-_59-bw-bg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.startQuizContainer {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 100px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.submitButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.nextQuestionButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.finalNextButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.restartQuizButtonBox {
+  text-align: center;
+  width: 300px;
+  height: 100px;  
+  padding: 0px;
+  margin: 0px auto;
+  border: transparent 1px solid;
+  border-radius: 3px;
+}
+
+
+.blackButton {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 25pt;
+  font-weight: 400;
+  margin: 0px auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.button {
+  background-color: transparent;
+  color: black;
+  border: black 3px solid;
+  border-radius: 3px;
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+
+#submitButton {
+  margin-top: 30px;
+}
+
+
+#nextQuestionButton {
+  margin-top: 30px;
+}
+
+
+#finalNextButton {
+  margin-top: 30px;
+}
+
+
+#restartQuizButton {
+  margin-top: 30px;
+}
+
+
+.questionBox {
+  font-size: 20pt;
+  font-weight: 300;
+  width: 800px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+
+.responseBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 400;
+  width: 800px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 60px;
+}
+
+
+.endOfQuizBox {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 600;
+  width: 200px;
+  height: 300px;
+  border: black 3px solid;
+  border-radius: 3px;
+  margin: 0px auto;
+  padding: 60px;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+.questionNumber {
+  text-decoration: none;
+}
+
+
+.questionNumberAndScoreDisplay {
+  font-size: 14pt;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} */
