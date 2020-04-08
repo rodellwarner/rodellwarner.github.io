@@ -1010,7 +1010,6 @@ a:active {
     color: black;
     background-color: transparent;
     border-radius: 6px;
-    width: 500px;
     height: 60px;
     margin-left: 0vw;
     margin-bottom: 0px;
@@ -1052,7 +1051,7 @@ a:active {
 
   #pyramidViewLiveButton {
     margin-right: 5px;
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
 
@@ -1060,7 +1059,7 @@ a:active {
 
   #pyramidViewCodeButton {
     margin-left: 5px;
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
 
@@ -1070,7 +1069,6 @@ a:active {
     color: dimgray;
     font-weight: 300;
     font-size: 30pt;
-    width: 60vw;
     margin-left: 0vw;
     padding-left: 30px;
     margin-bottom: 60px;
@@ -1129,7 +1127,7 @@ a:active {
   /* SMALL */
 
   #goToRodellWarnerButton {
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
 
