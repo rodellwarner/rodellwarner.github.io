@@ -3,31 +3,26 @@
 }
 
 
-
-/* LARGE - For device-widths 1025 and higher: */
-
-@media screen and (min-width: 1025px) {
-
-
   /* unvisited link */
-a:link {
-  color: rgb(75, 75, 75);
-}
+  a:link {
+    color: rgb(75, 75, 75);
+  }
 
-/* visited link */
-a:visited {
-  color: rgb(153, 153, 153);
-}
+  /* visited link */
+  a:visited {
+    color: rgb(153, 153, 153);
+  }
 
-/* mouse over link */
-a:hover {
-  color: rgb(187, 187, 187);
-}
+  /* mouse over link */
+  a:hover {
+    color: rgb(187, 187, 187);
+  }
 
-/* selected link */
-a:active {
-  color: rgb(41, 41, 41);
-}
+  /* selected link */
+  a:active {
+    color: rgb(41, 41, 41);
+  }
+
 
 
   body {
@@ -37,50 +32,54 @@ a:active {
     max-width: 2400px;
   }
 
+
   main {
     background-color: white;
   }
 
+
   #globe {
     width: 60px;
     position: relative;
-    left: 130px;
-    top: 510px;
+    left: 100px;
+    top: 40px;
     z-index: 2;
   }
 
+
   .portraitContainer {
-    width: 250px;
-    height: 400px;
+    display: none;
+  }
+
+
+  #portrait {
+    display: none;
+  }
+
+
+  #portraitSquare {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 60px;
     position: absolute;
-    margin-left: 17vw;
-    margin-top: 40px;
+    margin: 0 auto;
+    margin-top: 0px;
     z-index: 1;
   }
 
-  #portrait {
-    width: 250px;
-    height: 375px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-  }
-
-  .portraitContainerSquare {
-    display: none;
-  }
-
-  #portraitSquare {
-    display: none;
-  }
 
   #palmLeaf {
-    width: 500px;
+    width: 200px;
     height: 500 px;
     position: absolute;
     left: 100px;
-    top: 90px;
+    top: 0px;
     z-index: 2;
   }
+
 
   #rod {
     display: none;
@@ -90,97 +89,69 @@ a:active {
     z-index: 2;
   }
 
-  nav {
-    width: 250px;
-    height: 20px;
-    background-color: transparent;
-    margin-top: 20px;
-  }
-
-  .navUnorderedList {
-    color: black;
-    margin-top: 0;
-    padding-left: 30px;
-    background-color: transparent;
-  }
-
-  .navList {
-    list-style: none;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 12pt;
-    color: black;
-  }
-
-  #navProjects {
-    background-color: transparent;
-  }
-
-  #navAboutMe {
-    background-color: transparent;
-  }
-
-  #navContact {
-    background-color: transparent;
-  }
 
   #pyramid {
-    width: 300px;
-    position: absolute;
-    left: 200px;
-    top: 1800px;
-    z-index: 2;
+    display: none;
   }
 
+
   .diamond {
-    font-weight: 200;
+    display: none;
+    margin-top: 0px;
   }
+
   
-  header {
+  h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
-    font-size: 40pt;
+    font-size: 30pt;
     color: black;
     background-color: transparent;
-    width: 500px;
+    border-radius: 6px;
+    width: 100vw;
     height: 60px;
-    margin-left: 40vw;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    margin-top: 140px;
     padding-left: 30px;
   }
+
   
   .bio {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     text-align: left;
-    font-size: 20pt;
+    font-size: 14pt;
     color: black;
     background-color: white;
     border-radius: 6px;
-    width: 500px;
-    height: 500px;
-    margin-left: 40vw;
-    margin-bottom: 300px;
-    margin-top: 40px;
+    height: 350px;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
     padding: 30px;
+    padding-top: 0px;
   }
 
+
   .arrow {
-    font-size: 30pt;
+    font-size: 20pt;
     font-weight: 200;
   }
+
 
   #projectsLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 40pt;
-    width: 60vw;
+    font-size: 30pt;
     height: 100px;
-    margin-left: 40vw;
+    margin-left: 0vw;
     padding-left: 30px;
     margin-bottom: 60px;
     background-color: transparent;
   }
+
   
   .pyramidQuiz {
     height: 1500px;
@@ -192,7 +163,9 @@ a:active {
     background-color: whitesmoke;
   }
 
+
   #pyramidQuizIpad {
+    display: none;
     width: 70%;
     border-radius: 5px;
     padding-top: 0px;
@@ -201,29 +174,32 @@ a:active {
     border: solid 3px black;
   }
 
+
   #pyramidQuizMobile {
     height: 475px;
     border-radius: 5px;
     border: solid 3px black;
-    position: relative;
-    left: 80px;
-    top: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
+
 
   .pyramidQuizHeading {
     font-weight: 300;
     text-align: left;
-    font-size: 40pt;
+    font-size: 30pt;
     color: black;
     background-color: transparent;
     border-radius: 6px;
-    width: 500px;
     height: 60px;
-    margin-left: 40vw;
+    margin-left: 0vw;
     margin-bottom: 0px;
-    margin-top: 100px;
+    margin-top: 560px;
     padding-left: 30px;
   }
+
 
   .pyramidQuizDescription {
     position: relative;
@@ -231,15 +207,15 @@ a:active {
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 20pt;
+    font-size: 14pt;
     color: black;
     border-radius: 6px;
-    width: 500px;
     height: 300px;
-    margin-left: 40vw;
+    margin-left: 0vw;
     margin-top: 40px;
     padding: 30px;
   }
+
 
   .pyramidButtonContainer {
     display: flex;
@@ -247,33 +223,36 @@ a:active {
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
-    margin-left: 40vw;
+    margin-left: 0vw;
     margin-top: 100px;
     padding: 30px;
   }
 
+
   #pyramidViewLiveButton {
     margin-right: 5px;
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
 
+
   #pyramidViewCodeButton {
     margin-left: 5px;
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
+
 
   #aboutMeLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 40pt;
-    width: 60vw;
-    margin-left: 40vw;
+    font-size: 30pt;
+    margin-left: 0vw;
     padding-left: 30px;
     margin-bottom: 60px;
     background-color: white;
   }
+
 
   .aboutMe {
     height: 1400px;
@@ -283,16 +262,18 @@ a:active {
     background-color: whitesmoke;
   }
 
+
   .aboutMeHeading {
     font-weight: 300;
     text-align: left;
-    font-size: 40pt;
+    font-size: 30pt;
     color: black;
     background-color: transparent;
-    margin-left: 40vw;
+    margin-left: 0vw;
     margin-top: 100px;
     padding-left: 30px;
   }
+
 
   .aboutMeDescription {
     position: relative;
@@ -300,14 +281,14 @@ a:active {
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 20pt;
+    font-size: 14pt;
     color: black;
     border-radius: 6px;
-    width: 500px;
-    margin-left: 40vw;
+    margin-left: 0vw;
     margin-top: 40px;
     padding: 30px;
   }
+
 
   .goToRodellWarnerButtonContainer {
     display: flex;
@@ -317,17 +298,19 @@ a:active {
     margin-top: 100px;
   }
 
+
   #goToRodellWarnerButton {
-    font-size: 15pt;
+    font-size: 12pt;
     cursor: pointer;
   }
+
 
   #contactLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 40pt;
+    font-size: 30pt;
     width: 60vw;
-    margin-left: 40vw;
+    margin-left: 0vw;
     padding-left: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
@@ -335,22 +318,24 @@ a:active {
     background-color: white;
   }
 
+
   .contact {
     margin: 0px auto;
     background-color: whitesmoke;
   }
+
 
   .contactDetails {
     position: relative;
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 20pt;
+    font-size: 14pt;
     color: black;
-    width: 500px;
-    margin-left: 40vw;
+    margin-left: 0vw;
     padding: 30px;
   }
+
 
   .button {
     text-align: center;
@@ -360,6 +345,7 @@ a:active {
     border-radius: 5px;
     background-color: transparent;
   }
+
 
   .footer {
     font-weight: 200;
@@ -373,10 +359,6 @@ a:active {
     padding-top: 100px;
     bottom: 0;
   }
-
-}
-
-
 
 
 /* MEDIUM - For device-widths no larger than 1024 and no smaller than 376px: */
@@ -426,8 +408,8 @@ a:active {
   #globe {
     width: 80px;
     position: relative;
-    left: 270px;
-    top: 0px;
+    left: 400px;
+    top: 80px;
     z-index: 2;
   }
 
@@ -464,7 +446,7 @@ a:active {
     width: 300px;
     height: 500 px;
     position: absolute;
-    left: 250px;
+    left: 360px;
     top: -10px;
     z-index: 2;
     transform: rotate(5deg);
@@ -483,6 +465,7 @@ a:active {
   /* MEDIUM */
 
   #pyramid {
+    display: block;
     width: 80px;
     position: absolute;
     left: 20px;
@@ -493,13 +476,14 @@ a:active {
   /* MEDIUM */
 
   .diamond {
+    display: block;
     font-weight: 200;
     margin-top: 0px;
   }
 
   /* MEDIUM */
   
-  header {
+  h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
@@ -511,7 +495,7 @@ a:active {
     height: 60px;
     margin-left: 15vw;
     margin-bottom: 0px;
-    margin-top: 140px;
+    margin-top: 180px;
     padding-left: 30px;
   }
 
@@ -569,6 +553,7 @@ a:active {
   /* MEDIUM */
 
   #pyramidQuizIpad {
+    display: inline-block;
     width: 70%;
     border-radius: 5px;
     padding-top: 0px;
@@ -783,43 +768,34 @@ a:active {
     padding-top: 100px;
     bottom: 0;
   }
-
-
 }
 
 
+/* LARGE - For device-widths 1025 and higher: */
 
-
-
-
-
-/* SMALL - For device-widths 375 and Lower: */
-
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 1025px) {
 
 
   /* unvisited link */
-  a:link {
-    color: rgb(75, 75, 75);
-  }
+a:link {
+  color: rgb(75, 75, 75);
+}
 
-  /* visited link */
-  a:visited {
-    color: rgb(153, 153, 153);
-  }
+/* visited link */
+a:visited {
+  color: rgb(153, 153, 153);
+}
 
-  /* mouse over link */
-  a:hover {
-    color: rgb(187, 187, 187);
-  }
+/* mouse over link */
+a:hover {
+  color: rgb(187, 187, 187);
+}
 
-  /* selected link */
-  a:active {
-    color: rgb(41, 41, 41);
-  }
+/* selected link */
+a:active {
+  color: rgb(41, 41, 41);
+}
 
-
-  /* SMALL */
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -828,61 +804,68 @@ a:active {
     max-width: 2400px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   main {
     background-color: white;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #globe {
     width: 60px;
     position: relative;
-    left: 100px;
-    top: 40px;
+    left: 130px;
+    top: 510px;
     z-index: 2;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .portraitContainer {
-    display: none;
-  }
-
-  /* SMALL */
-
-  #portrait {
-    display: none;
-  }
-
-  /* SMALL */
-
-  #portraitSquare {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    left: 0;
-    right: 0;
-    top: 60px;
+    display: block;
+    width: 250px;
+    height: 400px;
     position: absolute;
-    margin: 0 auto;
-    margin-top: 0px;
+    margin-left: 17vw;
+    margin-top: 40px;
     z-index: 1;
   }
 
-  /* SMALL */
+  /*LARGE*/
+
+  #portrait {
+    display: block;
+    width: 250px;
+    height: 375px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+
+  /*LARGE*/
+
+  .portraitContainerSquare {
+    display: none;
+  }
+
+  /*LARGE*/
+
+  #portraitSquare {
+    display: none;
+  }
+
+  /*LARGE*/
 
   #palmLeaf {
-    width: 200px;
+    width: 500px;
     height: 500 px;
     position: absolute;
     left: 100px;
-    top: 0px;
+    top: 90px;
     z-index: 2;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #rod {
     display: none;
@@ -892,81 +875,132 @@ a:active {
     z-index: 2;
   }
 
-  /* SMALL */
+  /*LARGE*/
+
+  nav {
+    display: none;
+    width: 250px;
+    height: 20px;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  /*LARGE*/
+
+  .navUnorderedList {
+    display: none;
+    color: black;
+    margin-top: 0;
+    padding-left: 30px;
+    background-color: transparent;
+  }
+
+  /*LARGE*/
+
+  .navList {
+    display: none;
+    list-style: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12pt;
+    color: black;
+  }
+
+  /*LARGE*/
+
+  #navProjects {
+    display: none;
+    background-color: transparent;
+  }
+
+  /*LARGE*/
+
+  #navAboutMe {
+    display: none;
+    background-color: transparent;
+  }
+
+  /*LARGE*/
+
+  #navContact {
+    display: none;
+    background-color: transparent;
+  }
+
+  /*LARGE*/
 
   #pyramid {
-    display: none;
-    width: 100px;
+    display: block;
+    width: 300px;
     position: absolute;
-    left: 50%;
-    top: 850px;
+    left: 200px;
+    top: 1800px;
     z-index: 2;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .diamond {
-    display: none;
-    margin-top: 0px;
+    display: block;
+    font-weight: 200;
   }
 
-  /* SMALL */
+  /*LARGE*/
   
-  header {
+  h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
-    font-size: 30pt;
+    font-size: 40pt;
     color: black;
     background-color: transparent;
-    border-radius: 6px;
-    width: 100vw;
+    width: 500px;
     height: 60px;
-    margin-left: 0vw;
-    margin-bottom: 0px;
-    margin-top: 140px;
+    margin-left: 40vw;
+    margin-top: 0px;
     padding-left: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
   
   .bio {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     text-align: left;
-    font-size: 14pt;
+    font-size: 20pt;
     color: black;
     background-color: white;
     border-radius: 6px;
-    height: 350px;
-    margin-left: 0vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    width: 500px;
+    height: 500px;
+    margin-left: 40vw;
+    margin-bottom: 300px;
+    margin-top: 40px;
     padding: 30px;
-    padding-top: 0px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .arrow {
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: 200;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #projectsLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 30pt;
+    font-size: 40pt;
+    width: 60vw;
     height: 100px;
-    margin-left: 0vw;
+    margin-left: 40vw;
     padding-left: 30px;
     margin-bottom: 60px;
     background-color: transparent;
   }
 
-  /* SMALL */
+  /*LARGE*/
   
   .pyramidQuiz {
     height: 1500px;
@@ -978,10 +1012,10 @@ a:active {
     background-color: whitesmoke;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #pyramidQuizIpad {
-    display: none;
+    display: inline-block;
     width: 70%;
     border-radius: 5px;
     padding-top: 0px;
@@ -990,7 +1024,7 @@ a:active {
     border: solid 3px black;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #pyramidQuizMobile {
     height: 475px;
@@ -1001,23 +1035,24 @@ a:active {
     top: 40px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .pyramidQuizHeading {
     font-weight: 300;
     text-align: left;
-    font-size: 30pt;
+    font-size: 40pt;
     color: black;
     background-color: transparent;
     border-radius: 6px;
+    width: 500px;
     height: 60px;
-    margin-left: 0vw;
+    margin-left: 40vw;
     margin-bottom: 0px;
     margin-top: 100px;
     padding-left: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .pyramidQuizDescription {
     position: relative;
@@ -1025,16 +1060,17 @@ a:active {
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 14pt;
+    font-size: 20pt;
     color: black;
     border-radius: 6px;
+    width: 500px;
     height: 300px;
-    margin-left: 0vw;
+    margin-left: 40vw;
     margin-top: 40px;
     padding: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .pyramidButtonContainer {
     display: flex;
@@ -1042,40 +1078,41 @@ a:active {
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
-    margin-left: 0vw;
+    margin-left: 40vw;
     margin-top: 100px;
     padding: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #pyramidViewLiveButton {
     margin-right: 5px;
-    font-size: 12pt;
+    font-size: 15pt;
     cursor: pointer;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #pyramidViewCodeButton {
     margin-left: 5px;
-    font-size: 12pt;
+    font-size: 15pt;
     cursor: pointer;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #aboutMeLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 30pt;
-    margin-left: 0vw;
+    font-size: 40pt;
+    width: 60vw;
+    margin-left: 40vw;
     padding-left: 30px;
     margin-bottom: 60px;
     background-color: white;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .aboutMe {
     height: 1400px;
@@ -1085,20 +1122,20 @@ a:active {
     background-color: whitesmoke;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .aboutMeHeading {
     font-weight: 300;
     text-align: left;
-    font-size: 30pt;
+    font-size: 40pt;
     color: black;
     background-color: transparent;
-    margin-left: 0vw;
+    margin-left: 40vw;
     margin-top: 100px;
     padding-left: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .aboutMeDescription {
     position: relative;
@@ -1106,15 +1143,16 @@ a:active {
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 14pt;
+    font-size: 20pt;
     color: black;
     border-radius: 6px;
-    margin-left: 0vw;
+    width: 500px;
+    margin-left: 40vw;
     margin-top: 40px;
     padding: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .goToRodellWarnerButtonContainer {
     display: flex;
@@ -1124,21 +1162,19 @@ a:active {
     margin-top: 100px;
   }
 
-  /* SMALL */
-
   #goToRodellWarnerButton {
-    font-size: 12pt;
+    font-size: 15pt;
     cursor: pointer;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   #contactLabel {
     color: dimgray;
     font-weight: 300;
-    font-size: 30pt;
+    font-size: 40pt;
     width: 60vw;
-    margin-left: 0vw;
+    margin-left: 40vw;
     padding-left: 30px;
     margin-bottom: 30px;
     padding-top: 30px;
@@ -1146,27 +1182,28 @@ a:active {
     background-color: white;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .contact {
     margin: 0px auto;
     background-color: whitesmoke;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .contactDetails {
     position: relative;
     color: black;
     font-weight: 200;
     text-align: left;
-    font-size: 14pt;
+    font-size: 20pt;
     color: black;
-    margin-left: 0vw;
+    width: 500px;
+    margin-left: 40vw;
     padding: 30px;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .button {
     text-align: center;
@@ -1177,7 +1214,7 @@ a:active {
     background-color: transparent;
   }
 
-  /* SMALL */
+  /*LARGE*/
 
   .footer {
     font-weight: 200;
@@ -1191,5 +1228,4 @@ a:active {
     padding-top: 100px;
     bottom: 0;
   }
-
 }
