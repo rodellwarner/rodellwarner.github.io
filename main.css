@@ -4,7 +4,7 @@
 
 
 
-/* LARGE - For device-widths 1025 and Higher: */
+/* LARGE - For device-widths 1025 and higher: */
 
 @media screen and (min-width: 1025px) {
 
@@ -379,31 +379,31 @@ a:active {
 
 
 
-/* MEDIUM - For device-widths no larger than 1024 and no smaller than 768px: */
+/* MEDIUM - For device-widths no larger than 1024 and no smaller than 376px: */
 
 @media screen and (min-width: 376px) and (max-width: 1024px) {
 
 
 
-   /* unvisited link */
-a:link {
-  color: rgb(75, 75, 75);
-}
+     /* unvisited link */
+  a:link {
+    color: rgb(75, 75, 75);
+  }
 
-/* visited link */
-a:visited {
-  color: rgb(153, 153, 153);
-}
+  /* visited link */
+  a:visited {
+    color: rgb(153, 153, 153);
+  }
 
-/* mouse over link */
-a:hover {
-  color: rgb(187, 187, 187);
-}
+  /* mouse over link */
+  a:hover {
+    color: rgb(187, 187, 187);
+  }
 
-/* selected link */
-a:active {
-  color: rgb(41, 41, 41);
-}
+  /* selected link */
+  a:active {
+    color: rgb(41, 41, 41);
+  }
 
 
   /* MEDIUM */
@@ -543,94 +543,230 @@ a:active {
   /* MEDIUM */
 
   #projectsLabel {
-    display: none;
-    text-align: center;
-    font-weight: 200;
-    font-size: 27pt;
-    width: 100vw;
+    color: dimgray;
+    font-weight: 300;
+    font-size: 40pt;
+    width: 60vw;
     height: 100px;
-    margin-left: 0px;
-    margin-bottom: 100px;
-    background-color: whitesmoke;
+    margin-left: 15vw;
+    padding-left: 30px;
+    margin-bottom: 60px;
+    background-color: transparent;
   }
 
   /* MEDIUM */
   
   .pyramidQuiz {
-    color: white;
-    height: 900px;
-    width: 100vw;
-    padding-top: 0px;
+    height: 1500px;
+    max-width: 2400px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    padding-top: 150px;
     padding-bottom: 0px;
     background-color: whitesmoke;
-    position: relative;
   }
 
   /* MEDIUM */
 
   #pyramidQuizIpad {
-    left: 0;
-    right: 0;
-    width: 600px;
+    width: 70%;
     border-radius: 5px;
     padding-top: 0px;
-    position: absolute;
-    margin: 0 auto;
-    padding-top: 100px;
+    position: relative;
+    left: 150px;
+    border: solid 3px black;
   }
 
   /* MEDIUM */
 
   #pyramidQuizMobile {
-    width: 100px;
+    height: 200px;
     border-radius: 5px;
     border: solid 3px black;
-    position: absolute;
-    left: 80vw;
-    top: 35vw;
-    padding: 0px;
+    position: relative;
+    left: 80px;
+    top: 40px;
   }
 
   /* MEDIUM */
 
-  .nav {
-    width: 40vw;
+  .pyramidQuizHeading {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 500px;
     height: 60px;
+    margin-left: 15vw;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  /* MEDIUM */
+
+  .pyramidQuizDescription {
+    position: relative;
+    margin-left: 17vw;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    border-radius: 6px;
+    width: 500px;
+    height: 300px;
+    margin-left: 15vw;
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  /* MEDIUM */
+
+  .pyramidButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 15vw;
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  /* MEDIUM */
+
+  #pyramidViewLiveButton {
+    margin-right: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* MEDIUM */
+
+  #pyramidViewCodeButton {
+    margin-left: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* MEDIUM */
+
+  #aboutMeLabel {
+    color: dimgray;
+    font-weight: 300;
+    font-size: 40pt;
+    width: 60vw;
+    margin-left: 15vw;
+    padding-left: 30px;
+    margin-bottom: 60px;
     background-color: white;
   }
 
   /* MEDIUM */
 
-  .navUnorderedList {
-    display: none;
-    color: lightgray;
+  .aboutMe {
+    height: 1400px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    background-color: whitesmoke;
+  }
+
+  /* MEDIUM */
+
+  .aboutMeHeading {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    margin-left: 15vw;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  /* MEDIUM */
+
+  .aboutMeDescription {
     position: relative;
-    left: 70vw;
-    background-color: rgb(255, 254, 204);
-  }
-
-  /* MEDIUM */
-
-  .navList {
-    display: none;
-    list-style: none;
-    display: inline-block;
+    margin-left: 17vw;
+    color: black;
     font-weight: 200;
-    font-size: 30pt;
-    background-color: rgb(255, 254, 204);
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    border-radius: 6px;
+    width: 500px;
+    margin-left: 15vw;
+    margin-top: 40px;
+    padding: 30px;
   }
 
   /* MEDIUM */
 
-  #contact {
-    display: none;
-    padding-left: 20px;
+  .goToRodellWarnerButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
   }
 
   /* MEDIUM */
 
-  #cv {
-    display: none;
+  #goToRodellWarnerButton {
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* MEDIUM */
+
+  #contactLabel {
+    color: dimgray;
+    font-weight: 300;
+    font-size: 40pt;
+    width: 60vw;
+    margin-left: 15vw;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+
+  /* MEDIUM */
+
+  .contact {
+    margin: 0px auto;
+    background-color: whitesmoke;
+  }
+
+  /* MEDIUM */
+
+  .contactDetails {
+    position: relative;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    width: 500px;
+    margin-left: 15vw;
+    padding: 30px;
+  }
+
+  /* MEDIUM */
+
+  .button {
+    text-align: center;
+    font-weight: 600;
+    height: 40px;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: transparent;
   }
 
   /* MEDIUM */
@@ -643,12 +779,11 @@ a:active {
     height: 200px;
     width: 100vw;
     background-color: black;
-    /* margin: 0 auto;
-    padding: 0px; */
     position: relative;
     padding-top: 100px;
     bottom: 0;
   }
+
 
 }
 
@@ -663,25 +798,25 @@ a:active {
 @media screen and (max-width: 375px) {
 
 
-   /* unvisited link */
-a:link {
-  color: rgb(75, 75, 75);
-}
+  /* unvisited link */
+  a:link {
+    color: rgb(75, 75, 75);
+  }
 
-/* visited link */
-a:visited {
-  color: rgb(153, 153, 153);
-}
+  /* visited link */
+  a:visited {
+    color: rgb(153, 153, 153);
+  }
 
-/* mouse over link */
-a:hover {
-  color: rgb(187, 187, 187);
-}
+  /* mouse over link */
+  a:hover {
+    color: rgb(187, 187, 187);
+  }
 
-/* selected link */
-a:active {
-  color: rgb(41, 41, 41);
-}
+  /* selected link */
+  a:active {
+    color: rgb(41, 41, 41);
+  }
 
 
   /* SMALL */
@@ -763,8 +898,8 @@ a:active {
     display: none;
     width: 100px;
     position: absolute;
-    left: 20px;
-    top: 900px;
+    left: 50%;
+    top: 850px;
     z-index: 2;
   }
 
@@ -803,7 +938,6 @@ a:active {
     color: black;
     background-color: white;
     border-radius: 6px;
-    width: 100vw;
     height: 350px;
     margin-left: 0vw;
     margin-bottom: 0px;
@@ -822,26 +956,24 @@ a:active {
   /* SMALL */
 
   #projectsLabel {
-    display: none;
-    text-align: center;
-    font-weight: 200;
-    font-size: 20pt;
-    width: 100vw;
+    color: dimgray;
+    font-weight: 300;
+    font-size: 30pt;
     height: 100px;
-    margin-left: 0px;
-    margin-bottom: 100px;
-    background-color: whitesmoke;
+    margin-left: 0vw;
+    padding-left: 30px;
+    margin-bottom: 60px;
+    background-color: transparent;
   }
 
   /* SMALL */
   
   .pyramidQuiz {
-    color: white;
-    height: 900px;
-    width: 100vw;
+    height: 1500px;
+    max-width: 2400px;
     margin: 0px auto;
-    margin-bottom: 0px;
-    padding-top: 50px;
+    margin-bottom: 60px;
+    padding-top: 150px;
     padding-bottom: 0px;
     background-color: whitesmoke;
   }
@@ -850,66 +982,201 @@ a:active {
 
   #pyramidQuizIpad {
     display: none;
-    width: 600px;
+    width: 70%;
     border-radius: 5px;
     padding-top: 0px;
     position: relative;
     left: 150px;
+    border: solid 3px black;
   }
 
   /* SMALL */
 
   #pyramidQuizMobile {
-    width: 300px;
+    height: 475px;
     border-radius: 5px;
     border: solid 3px black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    position: relative;
+    left: 80px;
+    top: 40px;
   }
 
   /* SMALL */
 
-  .nav {
-    display: none;
-    width: 40vw;
+  .pyramidQuizHeading {
+    font-weight: 300;
+    text-align: left;
+    font-size: 30pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 500px;
     height: 60px;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  /* SMALL */
+
+  .pyramidQuizDescription {
+    position: relative;
+    margin-left: 17vw;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 14pt;
+    color: black;
+    border-radius: 6px;
+    height: 300px;
+    margin-left: 0vw;
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  /* SMALL */
+
+  .pyramidButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 0vw;
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  /* SMALL */
+
+  #pyramidViewLiveButton {
+    margin-right: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* SMALL */
+
+  #pyramidViewCodeButton {
+    margin-left: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* SMALL */
+
+  #aboutMeLabel {
+    color: dimgray;
+    font-weight: 300;
+    font-size: 30pt;
+    width: 60vw;
+    margin-left: 0vw;
+    padding-left: 30px;
+    margin-bottom: 60px;
     background-color: white;
   }
 
   /* SMALL */
 
-  .navUnorderedList {
-    display: none;
-    color: lightgray;
-    position: relative;
-    left: 70vw;
-    background-color: rgb(255, 254, 204);
+  .aboutMe {
+    height: 1400px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    background-color: whitesmoke;
   }
 
   /* SMALL */
 
-  .navList {
-    display: none;
-    list-style: none;
-    display: inline-block;
-    font-weight: 200;
+  .aboutMeHeading {
+    font-weight: 300;
+    text-align: left;
     font-size: 30pt;
-    background-color: rgb(255, 254, 204);
+    color: black;
+    background-color: transparent;
+    margin-left: 0vw;
+    margin-top: 100px;
+    padding-left: 30px;
   }
 
   /* SMALL */
 
-  #contact {
-    display: none;
-    padding-left: 20px;
+  .aboutMeDescription {
+    position: relative;
+    margin-left: 17vw;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 14pt;
+    color: black;
+    border-radius: 6px;
+    margin-left: 0vw;
+    margin-top: 40px;
+    padding: 30px;
   }
 
   /* SMALL */
 
-  #cv {
-    display: none;
+  .goToRodellWarnerButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  /* SMALL */
+
+  #goToRodellWarnerButton {
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* SMALL */
+
+  #contactLabel {
+    color: dimgray;
+    font-weight: 300;
+    font-size: 30pt;
+    width: 60vw;
+    margin-left: 0vw;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+
+  /* SMALL */
+
+  .contact {
+    margin: 0px auto;
+    background-color: whitesmoke;
+  }
+
+  /* SMALL */
+
+  .contactDetails {
+    position: relative;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 14pt;
+    color: black;
+    margin-left: 0vw;
+    padding: 30px;
+  }
+
+  /* SMALL */
+
+  .button {
+    text-align: center;
+    font-weight: 600;
+    height: 40px;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: transparent;
   }
 
   /* SMALL */
@@ -920,14 +1187,11 @@ a:active {
     text-align: center;
     color: white;
     height: 200px;
-    width: 375px;
+    width: 100vw;
     background-color: black;
-    /* margin: 0 auto;
-    padding: 0px; */
     position: relative;
     padding-top: 100px;
     bottom: 0;
   }
-
 
 }
