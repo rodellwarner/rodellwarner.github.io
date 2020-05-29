@@ -2,6 +2,416 @@
   box-sizing: border-box;
 }
 
+/* unvisited link */
+a:link {
+  color: rgb(75, 75, 75);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(153, 153, 153);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(187, 187, 187);
+}
+
+/* selected link */
+a:active {
+  color: rgb(41, 41, 41);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  background-color: white;
+  max-width: 2400px;
+}
+
+main {
+  background-color: white;
+}
+
+#globe {
+  width: 60px;
+  position: relative;
+  left: 100px;
+  top: 40px;
+  z-index: 2;
+}
+
+.dividerContainer {
+  display: none;
+}
+
+.portraitContainer {
+  display: none;
+}
+
+#portrait {
+  display: none;
+}
+
+#portraitSquare {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  top: 60px;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+#palmLeaf {
+  width: 200px;
+  height: 500 px;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  z-index: 2;
+}
+
+#rod {
+  display: none;
+  position: absolute;
+  left: 400px;
+  top: -450px;
+  z-index: 2;
+}
+
+#pyramid {
+  display: none;
+}
+
+.diamond {
+  display: none;
+  margin-top: 0px;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 30pt;
+  color: black;
+  background-color: transparent;
+  border-radius: 6px;
+  width: 100vw;
+  height: 60px;
+  margin-left: 0vw;
+  margin-bottom: 0px;
+  margin-top: 140px;
+  padding-left: 30px;
+}
+  
+.bio {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  font-size: 14pt;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  height: 350px;
+  margin-left: 0vw;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.arrow {
+  font-size: 20pt;
+  font-weight: 200;
+}
+
+#projectsLabel {
+  color: dimgray;
+  font-weight: 300;
+  font-size: 30pt;
+  height: 100px;
+  margin-left: 0vw;
+  padding-left: 30px;
+  margin-bottom: 60px;
+  background-color: transparent;
+}
+
+.pyramidQuizContainer {
+  /* height: 1500px; */
+  /* max-width: 2400px; */
+  margin: 0px auto;
+  margin-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  background-color: whitesmoke;
+}
+
+#pyramidQuizIpad {
+  display: none;
+  width: 70%;
+  border-radius: 5px;
+  padding-top: 0px;
+  position: relative;
+  left: 150px;
+  border: solid 3px black;
+}
+
+#pyramidQuizMobile {
+  height: 475px;
+  border-radius: 5px;
+  border: solid 3px black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.pyramidQuizHeading {
+  font-weight: 300;
+  text-align: left;
+  font-size: 30pt;
+  color: black;
+  background-color: transparent;
+  border-radius: 6px;
+  height: 60px;
+  margin-left: 0vw;
+  margin-bottom: 0px;
+  margin-top: 560px;
+  padding-left: 30px;
+}
+
+.pyramidQuizDescription {
+  position: relative;
+  margin-left: 17vw;
+  color: black;
+  font-weight: 200;
+  text-align: left;
+  font-size: 14pt;
+  color: black;
+  border-radius: 6px;
+  height: 300px;
+  margin-left: 0vw;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.pyramidButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 0vw;
+  margin-top: 0px;
+  padding: 30px;
+}
+
+#pyramidViewLiveButton {
+  margin-right: 5px;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+#pyramidViewCodeButton {
+  margin-left: 5px;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+.covidCompareContainer {
+  /* height: 1500px;
+  max-width: 2400px; */
+  margin: 0px auto;
+  margin-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#covidCompareScreenshot {
+  display: none;
+}
+
+#covidCompareScreenshotMobile {
+  height: 475px;
+  border-radius: 5px;
+  border: solid 3px black;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.covidCompareHeading {
+  font-weight: 300;
+  text-align: left;
+  font-size: 30pt;
+  color: black;
+  background-color: transparent;
+  border-radius: 6px;
+  /* height: 60px; */
+  margin-left: 0vw;
+  margin-bottom: 0px;
+  margin-top: 60px;
+  padding-left: 30px;
+  /* position: relative; */
+}
+
+.covidCompareDescription {
+  position: relative;
+  margin-left: 17vw;
+  color: black;
+  font-weight: 200;
+  text-align: left;
+  font-size: 14pt;
+  color: black;
+  border-radius: 6px;
+  /* height: 300px; */
+  margin-left: 0vw;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.covidCompareButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 0vw;
+  margin-top: 0px;
+  padding: 30px;
+}
+
+#covidCompareViewLiveButton {
+  margin-right: 5px;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+#covidCompareViewCodeButton {
+  margin-right: 5px;
+  font-size: 12pt;
+  cursor: pointer;
+}
+
+#aboutMeLabel {
+  color: dimgray;
+  font-weight: 300;
+  font-size: 30pt;
+  margin-left: 0vw;
+  padding-left: 30px;
+  margin-bottom: 60px;
+  background-color: white;
+}
+
+.aboutMe {
+  /* height: 1000px; */
+  margin: 0px auto;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  background-color: whitesmoke;
+}
+
+.aboutMeHeading {
+  font-weight: 300;
+  text-align: left;
+  font-size: 30pt;
+  color: black;
+  background-color: transparent;
+  margin-left: 0vw;
+  margin-top: 100px;
+  padding-left: 30px;
+}
+
+.aboutMeDescription {
+  position: relative;
+  margin-left: 17vw;
+  color: black;
+  font-weight: 200;
+  text-align: left;
+  font-size: 14pt;
+  color: black;
+  border-radius: 6px;
+  margin-left: 0vw;
+  margin-top: 0px;
+  padding: 30px;
+}
+
+.goToRodellWarnerButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#goToRodellWarnerButton {
+  font-size: 12pt;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+#contactLabel {
+  color: dimgray;
+  font-weight: 300;
+  font-size: 30pt;
+  width: 60vw;
+  margin-left: 0vw;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+.contact {
+  margin: 0px auto;
+  background-color: whitesmoke;
+}
+
+.contactDetails {
+  position: relative;
+  color: black;
+  font-weight: 200;
+  text-align: left;
+  font-size: 14pt;
+  color: black;
+  margin-left: 0vw;
+  padding: 30px;
+}
+
+.button {
+  text-align: center;
+  font-weight: 600;
+  height: 40px;
+  border: solid 3px black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.footer {
+  font-weight: 200;
+  font-size: 20pt;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  padding-top: 100px;
+  bottom: 0;
+}
+
+
+/* MEDIUM - For device-widths no larger than 1024 and no smaller than 376px: */
+
+@media screen and (min-width: 376px) and (max-width: 1024px) {
 
   /* unvisited link */
   a:link {
@@ -22,371 +432,6 @@
   a:active {
     color: rgb(41, 41, 41);
   }
-
-
-
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px;
-    background-color: white;
-    max-width: 2400px;
-  }
-
-
-  main {
-    background-color: white;
-  }
-
-
-  #globe {
-    width: 60px;
-    position: relative;
-    left: 100px;
-    top: 40px;
-    z-index: 2;
-  }
-
-
-  .portraitContainer {
-    display: none;
-  }
-
-
-  #portrait {
-    display: none;
-  }
-
-
-  #portraitSquare {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    left: 0;
-    right: 0;
-    top: 60px;
-    position: absolute;
-    margin: 0 auto;
-    margin-top: 0px;
-    z-index: 1;
-  }
-
-
-  #palmLeaf {
-    width: 200px;
-    height: 500 px;
-    position: absolute;
-    left: 100px;
-    top: 0px;
-    z-index: 2;
-  }
-
-
-  #rod {
-    display: none;
-    position: absolute;
-    left: 400px;
-    top: -450px;
-    z-index: 2;
-  }
-
-
-  #pyramid {
-    display: none;
-  }
-
-
-  .diamond {
-    display: none;
-    margin-top: 0px;
-  }
-
-  
-  h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    text-align: left;
-    font-size: 30pt;
-    color: black;
-    background-color: transparent;
-    border-radius: 6px;
-    width: 100vw;
-    height: 60px;
-    margin-left: 0vw;
-    margin-bottom: 0px;
-    margin-top: 140px;
-    padding-left: 30px;
-  }
-
-  
-  .bio {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200;
-    text-align: left;
-    font-size: 14pt;
-    color: black;
-    background-color: white;
-    border-radius: 6px;
-    height: 350px;
-    margin-left: 0vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding: 30px;
-    padding-top: 0px;
-  }
-
-
-  .arrow {
-    font-size: 20pt;
-    font-weight: 200;
-  }
-
-
-  #projectsLabel {
-    color: dimgray;
-    font-weight: 300;
-    font-size: 30pt;
-    height: 100px;
-    margin-left: 0vw;
-    padding-left: 30px;
-    margin-bottom: 60px;
-    background-color: transparent;
-  }
-
-  
-  .pyramidQuiz {
-    height: 1500px;
-    max-width: 2400px;
-    margin: 0px auto;
-    margin-bottom: 60px;
-    padding-top: 150px;
-    padding-bottom: 0px;
-    background-color: whitesmoke;
-  }
-
-
-  #pyramidQuizIpad {
-    display: none;
-    width: 70%;
-    border-radius: 5px;
-    padding-top: 0px;
-    position: relative;
-    left: 150px;
-    border: solid 3px black;
-  }
-
-
-  #pyramidQuizMobile {
-    height: 475px;
-    border-radius: 5px;
-    border: solid 3px black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-
-  .pyramidQuizHeading {
-    font-weight: 300;
-    text-align: left;
-    font-size: 30pt;
-    color: black;
-    background-color: transparent;
-    border-radius: 6px;
-    height: 60px;
-    margin-left: 0vw;
-    margin-bottom: 0px;
-    margin-top: 560px;
-    padding-left: 30px;
-  }
-
-
-  .pyramidQuizDescription {
-    position: relative;
-    margin-left: 17vw;
-    color: black;
-    font-weight: 200;
-    text-align: left;
-    font-size: 14pt;
-    color: black;
-    border-radius: 6px;
-    height: 300px;
-    margin-left: 0vw;
-    margin-top: 40px;
-    padding: 30px;
-  }
-
-
-  .pyramidButtonContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    align-items: center;
-    margin-left: 0vw;
-    margin-top: 100px;
-    padding: 30px;
-  }
-
-
-  #pyramidViewLiveButton {
-    margin-right: 5px;
-    font-size: 12pt;
-    cursor: pointer;
-  }
-
-
-  #pyramidViewCodeButton {
-    margin-left: 5px;
-    font-size: 12pt;
-    cursor: pointer;
-  }
-
-
-  #aboutMeLabel {
-    color: dimgray;
-    font-weight: 300;
-    font-size: 30pt;
-    margin-left: 0vw;
-    padding-left: 30px;
-    margin-bottom: 60px;
-    background-color: white;
-  }
-
-
-  .aboutMe {
-    height: 1000px;
-    margin: 0px auto;
-    margin-bottom: 30px;
-    padding-top: 20px;
-    background-color: whitesmoke;
-  }
-
-
-  .aboutMeHeading {
-    font-weight: 300;
-    text-align: left;
-    font-size: 30pt;
-    color: black;
-    background-color: transparent;
-    margin-left: 0vw;
-    margin-top: 100px;
-    padding-left: 30px;
-  }
-
-
-  .aboutMeDescription {
-    position: relative;
-    margin-left: 17vw;
-    color: black;
-    font-weight: 200;
-    text-align: left;
-    font-size: 14pt;
-    color: black;
-    border-radius: 6px;
-    margin-left: 0vw;
-    margin-top: 40px;
-    padding: 30px;
-  }
-
-
-  .goToRodellWarnerButtonContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 100px;
-  }
-
-
-  #goToRodellWarnerButton {
-    font-size: 12pt;
-    cursor: pointer;
-  }
-
-
-  #contactLabel {
-    color: dimgray;
-    font-weight: 300;
-    font-size: 30pt;
-    width: 60vw;
-    margin-left: 0vw;
-    padding-left: 30px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: white;
-  }
-
-
-  .contact {
-    margin: 0px auto;
-    background-color: whitesmoke;
-  }
-
-
-  .contactDetails {
-    position: relative;
-    color: black;
-    font-weight: 200;
-    text-align: left;
-    font-size: 14pt;
-    color: black;
-    margin-left: 0vw;
-    padding: 30px;
-  }
-
-
-  .button {
-    text-align: center;
-    font-weight: 600;
-    height: 40px;
-    border: solid 3px black;
-    border-radius: 5px;
-    background-color: transparent;
-  }
-
-
-  .footer {
-    font-weight: 200;
-    font-size: 20pt;
-    text-align: center;
-    color: white;
-    height: 200px;
-    width: 100vw;
-    background-color: black;
-    position: relative;
-    padding-top: 100px;
-    bottom: 0;
-  }
-
-
-/* MEDIUM - For device-widths no larger than 1024 and no smaller than 376px: */
-
-@media screen and (min-width: 376px) and (max-width: 1024px) {
-
-
-
-     /* unvisited link */
-  a:link {
-    color: rgb(75, 75, 75);
-  }
-
-  /* visited link */
-  a:visited {
-    color: rgb(153, 153, 153);
-  }
-
-  /* mouse over link */
-  a:hover {
-    color: rgb(187, 187, 187);
-  }
-
-  /* selected link */
-  a:active {
-    color: rgb(41, 41, 41);
-  }
-
 
   /* MEDIUM */
 
@@ -540,9 +585,9 @@
 
   /* MEDIUM */
   
-  .pyramidQuiz {
-    height: 1500px;
-    max-width: 2400px;
+  .pyramidQuizContainer {
+    /* height: 1500px;
+    max-width: 2400px; */
     margin: 0px auto;
     margin-bottom: 60px;
     padding-top: 150px;
@@ -619,6 +664,8 @@
     margin-left: 15vw;
     margin-top: 100px;
     padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   /* MEDIUM */
@@ -632,6 +679,103 @@
   /* MEDIUM */
 
   #pyramidViewCodeButton {
+    margin-left: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* MEDIUM */
+
+  .covidCompareContainer {
+    /* height: 1700px;
+    max-width: 2400px; */
+    margin: 0px auto;
+    margin-bottom: 60px;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
+  }
+
+  /* MEDIUM */
+
+  .covidCompareHeading {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 500px;
+    height: 60px;
+    margin-left: 15vw;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  /* MEDIUM */
+
+  .covidCompareDescription {
+    position: relative;
+    margin-left: 17vw;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    border-radius: 6px;
+    width: 500px;
+    height: 300px;
+    margin-left: 15vw;
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  /* MEDIUM */
+
+  #covidCompareScreenshot {
+    width: 70%;
+    border-radius: 6px;
+    border: solid 3px black;
+    text-align: center;
+    margin: auto, 0;
+    display: inline-block;
+    position: relative;
+  }
+
+  /* MEDIUM */
+
+  #covidCompareScreenshotMobile {
+    display: none;
+  }
+
+  /* MEDIUM */
+
+  .covidCompareButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 15vw;
+    margin-top: 100px;
+    padding: 30px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  /* MEDIUM */
+
+  #covidCompareViewLiveButton {
+    margin-right: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+
+  /* MEDIUM */
+
+  #covidCompareViewCodeButton {
     margin-left: 5px;
     font-size: 15pt;
     cursor: pointer;
@@ -653,7 +797,7 @@
   /* MEDIUM */
 
   .aboutMe {
-    height: 1000px;
+    /* height: 1000px; */
     margin: 0px auto;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -775,33 +919,39 @@
 
 @media screen and (min-width: 1025px) {
 
-
   /* unvisited link */
-a:link {
-  color: rgb(75, 75, 75);
-}
+  a:link {
+    color: rgb(75, 75, 75);
+  }
 
-/* visited link */
-a:visited {
-  color: rgb(153, 153, 153);
-}
+  /* visited link */
+  a:visited {
+    color: rgb(153, 153, 153);
+  }
 
-/* mouse over link */
-a:hover {
-  color: rgb(187, 187, 187);
-}
+  /* mouse over link */
+  a:hover {
+    color: rgb(187, 187, 187);
+  }
 
-/* selected link */
-a:active {
-  color: rgb(41, 41, 41);
-}
+  /* selected link */
+  a:active {
+    color: rgb(41, 41, 41);
+  }
 
-
+  /*LARGE*/
+  
   body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
     background-color: white;
     max-width: 2400px;
+  }
+
+  /*LARGE*/
+
+  .dividerContainer {
+    display: none;
   }
 
   /*LARGE*/
@@ -1002,7 +1152,7 @@ a:active {
 
   /*LARGE*/
   
-  .pyramidQuiz {
+  .pyramidQuizContainer {
     height: 1500px;
     max-width: 2400px;
     margin: 0px auto;
@@ -1089,6 +1239,7 @@ a:active {
     margin-right: 5px;
     font-size: 15pt;
     cursor: pointer;
+    margin-top: 40px;
   }
 
   /*LARGE*/
@@ -1097,6 +1248,103 @@ a:active {
     margin-left: 5px;
     font-size: 15pt;
     cursor: pointer;
+    margin-top: 40px;
+  }
+
+  /*LARGE*/
+
+  .covidCompareContainer {
+    height: 1700px;
+    max-width: 2400px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
+  }
+
+  /*LARGE*/
+
+  .covidCompareHeading {
+    font-weight: 300;
+    text-align: left;
+    font-size: 40pt;
+    color: black;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 500px;
+    height: 60px;
+    margin-left: 40vw;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  /*LARGE*/
+
+  .covidCompareDescription {
+    position: relative;
+    margin-left: 17vw;
+    color: black;
+    font-weight: 200;
+    text-align: left;
+    font-size: 20pt;
+    color: black;
+    border-radius: 6px;
+    width: 500px;
+    height: 300px;
+    margin-left: 40vw;
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  /*LARGE*/
+
+  #covidCompareScreenshot {
+    width: 70%;
+    border-radius: 6px;
+    border: solid 3px black;
+    text-align: center;
+    margin: auto, 0;
+    display: inline-block;
+    position: relative;
+  }
+
+  /*LARGE*/
+
+  #covidCompareScreenshotMobile {
+    display: none;
+  }
+
+  /*LARGE*/
+
+  .covidCompareButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 40vw;
+    margin-top: 200px;
+    padding: 30px;
+  }
+
+  /*LARGE*/
+
+  #covidCompareViewLiveButton {
+    margin-right: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+
+  /*LARGE*/
+
+  #covidCompareViewCodeButton {
+    margin-left: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+    margin-top: 40px;
   }
 
   /*LARGE*/
@@ -1115,7 +1363,7 @@ a:active {
   /*LARGE*/
 
   .aboutMe {
-    height: 1000px;
+    height: 1100px;
     margin: 0px auto;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -1161,6 +1409,8 @@ a:active {
     align-items: center;
     margin-top: 100px;
   }
+
+  /*LARGE*/
 
   #goToRodellWarnerButton {
     font-size: 15pt;
